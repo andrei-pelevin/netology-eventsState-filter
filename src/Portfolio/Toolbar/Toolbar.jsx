@@ -8,7 +8,7 @@ const Toolbar = ({ filters, selected, onSelectFilter }) => {
                     <button 
                         className={o === selected ? 'm5 btn btn-dark' : 'm5 btn btn-outline-dark'}
                         key={o}
-                        onClick={onSelectFilter}>{o}
+                        onClick={() => onSelectFilter(o)} >{o}
                     </button>
                 )
             })}

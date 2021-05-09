@@ -12,7 +12,7 @@ class Portfolio extends Component {
     }
 
     onSelectFilter(filter) {
-        this.setState({ selected: `${filter.target.innerText}` })
+        this.setState({ selected: filter })
     }
     render() {
         return (
